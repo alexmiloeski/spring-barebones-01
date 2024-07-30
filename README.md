@@ -1,0 +1,1 @@
+# Bare-bones Spring web app with one endpoint, GET /hello that says "hello"
