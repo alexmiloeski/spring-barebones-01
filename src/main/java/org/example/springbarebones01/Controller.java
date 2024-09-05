@@ -10,4 +10,10 @@ public class Controller {
         System.out.println("Controller.hello");
         return "hello";
     }
+
+    @GetMapping("/bye")
+    public String bye() {
+        System.out.println("Controller.bye");
+        return "bye";
+    }
 }
