@@ -4,8 +4,8 @@ spring:
   config:
     import: optional:file:.env[.properties]
 app:
-  var1: ${VAR1}
-  secret1: ${SECRET1}
+  var1: ${VAR1:default_VAR1_value}
+  secone: ${SEC_ONE:default_SEC_ONE_value}
 #  datasource:
 #    url: jdbc:postgresql://aws-0-eu-central-1.pooler.supabase.com:6543/postgres?user=postgres.nytforpyzmtichiygwbe&password=${DB_PW}
 #    driver-class-name: org.postgresql.Driver

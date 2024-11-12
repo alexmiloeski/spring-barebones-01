@@ -12,17 +12,17 @@ public class Controller {
     @Value("${app.var1}")
     private String var1;
 
-    @Value("${app.secret1}")
-    private String secret1;
+    @Value("${app.secone}")
+    private String secOne;
 
     @GetMapping("/hello")
     public HashMap<String, String> hello() {
         System.out.println("Controller.hello");
         System.out.println("var1 = " + var1);
-        System.out.println("secret1 = " + secret1);
+        System.out.println("secOne = " + secOne);
         HashMap<String, String> map = new HashMap<>();
         map.put("var1", var1);
-        map.put("secret1", secret1);
+        map.put("secOne", secOne);
         return map;
     }
 
