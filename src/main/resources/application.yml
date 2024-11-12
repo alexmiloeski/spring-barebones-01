@@ -1,8 +1,11 @@
 spring:
   application:
     name: spring-barebones-01
-#  config:
-#    import: optional:classpath:.env[.properties]
+  config:
+    import: optional:file:.env[.properties]
+app:
+  var1: ${VAR1}
+  secret1: ${SECRET1}
 #  datasource:
 #    url: jdbc:postgresql://aws-0-eu-central-1.pooler.supabase.com:6543/postgres?user=postgres.nytforpyzmtichiygwbe&password=${DB_PW}
 #    driver-class-name: org.postgresql.Driver
